@@ -1,0 +1,39 @@
+.cause-entry.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 15px;
+}
+
+.cause-entry.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    text-decoration: underline;
+}
+
+.progress.custom-progress-success {
+    height: 10px;
+}
+
+.fund-raised {
+    font-weight: bold;
+    font-size: 1.2em;
+}
