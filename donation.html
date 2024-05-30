@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -26,6 +27,29 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .highlight-on-click {
+          cursor: pointer;
+      }
+      .highlight-on-click:focus {
+          background-color: yellow;
+      }
+      .donation-section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      .donation-section .form-group {
+          flex: 1;
+          min-width: 150px;
+          margin: 10px;
+      }
+      .donation-section h4 {
+          width: 100%;
+      }
+  </style>
+
   </head>
   <body>
     
@@ -62,7 +86,7 @@
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/About-Us.jpg');background-size: cover; background-position: center; height: 60vh; overflow: hidden;" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('images/donate-fundraiser.jpg');background-size: cover; background-position-x: center; height: 60vh; overflow: hidden;" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -72,9 +96,23 @@
 
     <section class="ftco-section contact-section ftco-degree-bg">
       <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-5 heading-section ftco-animate text-center">
+            <h2 class="mb-4 d-flex align-items-center justify-content-center">
+              <img src="images/heading-icon.png" alt="Support Now Image" style="max-width: 5%; height: auto; margin-right: 10px;">
+              <strong>Support Now</strong>
+            </h2>
+            <p>In every 10 minutes a child drops out of school & the future of another Indian will be smashed!</p>
+            <p><h5 style="background-color: yellow; display: inline;"><strong>The reason: lack of funds!</strong></h5></p>
+          </div>
+        </div> 
+        <div>
+          <h2 style="color: yellow; display: inline;">GIVE THE CHILD A CHILDHOOD</h2>
+          <p>Your support is vital to ensure this change and make a direct & lasting impact on the lives of children. Whether you choose to donate monthly or choose to provide a single gift, you are standing up for every child's right to health, education, equality & protection.</p>
+        </div>          
           <div class="row d-flex mb-5 contact-info">
               <div class="col-md-6">
-                  <div class="cart" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+                  <div class="cart" style="border: 1px solid #e7de62; padding: 10px; border-radius: 10px; margin-bottom: 10px;">
                       <div class="cart-item">
                           <h2 class="h4">Donation Details</h2>
                           <div class="item-details">
@@ -88,7 +126,7 @@
               </div>
   
               <div class="col-md-6">
-                  <div class="cart" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+                  <div class="cart" style="border: 1px solid #e7de62; padding: 10px; border-radius: 10px; margin-bottom: 10px;">
                       <div class="cart-item">
                           <h2 class="h4">Donation Details</h2>
                           <div class="item-details">
@@ -104,40 +142,162 @@
 
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
-                <div class="d-flex mb-4">
-                    <div class="img" style="background-image: url(images/SahyogQR.jpeg); width: 150px; height: 150px; background-size: cover;"></div>
-                </div>
-                <div class="info ml-3">
+              <div class="d-flex mb-4 justify-content-between">
+                <div class="d-flex flex-column align-items-center">
+                  <div class="img" style="background-image: url(images/SahyogQR.jpeg); width: 150px; height: 150px; background-size: cover;"></div>
                   <a href="#" class="btn btn-warning mt-3" style="pointer-events: none;">Scan & Donate</a>
                 </div>
-            </div>
-        </div>   
-  
-          <div class="row block-9">
-              <div class="col-md-6 pr-md-5">
-                  <h4 class="mb-4">For any further query connect here</h4>
-                  <form id="contactForm">
-                      <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Your Name" id="name" required>
-                      </div>
-                      <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Your Email" id="email" required>
-                      </div>
-                      <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Subject" id="subject" required>
-                      </div>
-                      <div class="form-group">
-                          <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-                      </div>
-                      <div class="form-group">
-                          <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-                      </div>
-                      <div id="formMessages" style="display: none;"></div>
-                  </form>
+                <div class="d-flex flex-column align-items-center ml-4">
+                  <div class="d-flex align-items-center">
+                    <img src="images/paytm.jpg" alt="Paytm" style="width: 150px; height: 40px;">
+                    <p class="ml-2" style="margin: 0; font-weight: bold; white-space: nowrap;">+91-9090909090</p>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
+          <div class="container">
+            <div class="text-center mb-3">
+                <a href="#" class="btn btn-white px-3 py-2 mt-2">FOR DONORS OUTSIDE INDIA</a>
+            </div>
+            <p class="selected text-center">CHOOSE A CAUSE AND SELECT YOUR AMOUNT</p>
+            <form method="post" id="donation_india" action data-gtm-form-interact-id="0">
+                <!-- COVID-19 Section -->
+                <div class="donation-section mb-4">
+                    <h4 class="mb-3">COVID-19</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="2500" id="pay_value_covid" name="pay_value_covid" onclick="chckSolutions('2500','COVID-19')" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click" placeholder="Any Other Amount" id="covidAmount" name="covidAmount" onkeypress="return isNumberKey(event)" onkeyup="updateAmount()">
+                    </div>
+                </div>
+        
+                <!-- EDUCATION Section -->
+                <div class="donation-section mb-4">
+                    <h4 class="mb-3" id="education-cat">EDUCATION</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="6000" name="pay_value_education" onclick="chckSolutions('6000','EDUCATION')">
+                        <label>(for education of 1 child for 1 year)</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="12000" name="pay_value_education" onclick="chckSolutions('12000','EDUCATION')">
+                        <label>(for education of 2 children for 1 year)</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="18000" name="pay_value_education" onclick="chckSolutions('18000','EDUCATION')">
+                        <label>(for education of 3 children for 1 year)</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click" placeholder="Any Other Amount" id="eduAmount" name="eduAmount" onkeypress="return isNumberKey(event)" onkeyup="updateAmount1()">
+                    </div>
+                </div>
+        
+                <!-- HEALTH (EMERGENCY) Section -->
+                <div class="donation-section mb-4">
+                    <h4 class="mb-3" id="health-cat">HEALTH (EMERGENCY)</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="5000" required name="pay_value_health" onclick="chckSolutions('5000','HEALTH (EMERGENCY)')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="10000" required name="pay_value_health" onclick="chckSolutions('10000','HEALTH (EMERGENCY)')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="20000" required name="pay_value_health" onclick="chckSolutions('20000','HEALTH (EMERGENCY)')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="50000" required name="pay_value_health" onclick="chckSolutions('50000','HEALTH (EMERGENCY)')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click" placeholder="Any Other Amount" id="healthAmount" name="healthAmount" onkeypress="return isNumberKey(event)" onkeyup="updateAmount2()">
+                    </div>
+                </div>
+        
+                <!-- VOCATIONAL TRAINING & EMPLOYMENT TO WOMEN -->
+                <div class="donation-section mb-4">
+                    <h4 class="mb-3" id="vocational-cat">VOCATIONAL TRAINING & EMPLOYMENT TO WOMEN</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="5000" required name="pay_value_vocational" onclick="chckSolutions('5000','VOCATIONAL TRAINING & EMPLOYMENT TO WOMEN')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click" placeholder="Any Other Amount" id="vocational" name="vocational" onkeypress="return isNumberKey(event)" onkeyup="updateAmount2()">
+                    </div>
+                </div>
+        
+                <!-- CONTRIBUTE FOR CHILDREN OF WORKERS (CRECHES IN SLUMS) -->
+                <div class="donation-section mb-4">
+                    <h4 class="mb-3" id="creches-cat">CONTRIBUTE FOR CHILDREN OF WORKERS (CRECHES IN SLUMS)</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="5000" required name="pay_value_creches" onclick="chckSolutions('5000','CONTRIBUTE FOR CHILDREN OF WORKERS (CRECHES IN SLUMS)')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click" placeholder="Any Other Amount" id="children" name="children" onkeypress="return isNumberKey(event)" onkeyup="updateAmount2()">
+                    </div>
+                </div>
+        
+                <!-- CONTRIBUTE FOR RAPE SURVIVOR -->
+                <div class="donation-section mb-4">
+                    <h4 class="mb-3" id="rape-cat">CONTRIBUTE FOR RAPE SURVIVOR</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="3000" required name="pay_value_rape" onclick="chckSolutions('3000','CONTRIBUTE FOR RAPE SURVIVOR')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="5000" required name="pay_value_rape" onclick="chckSolutions('5000','CONTRIBUTE FOR RAPE SURVIVOR')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click mb-2" readonly value="10000" required name="pay_value_rape" onclick="chckSolutions('10000','CONTRIBUTE FOR RAPE SURVIVOR')">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control highlight-on-click" placeholder="Any Other Amount" id="rape" name="rape" onkeypress="return isNumberKey(event)" onkeyup="updateAmount2()">
+                    </div>
+                </div>
+        
+                <!-- Submit Button -->
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
       </div>
-  </section>  
+  </section>
+  <script>
+    const highlightOnClick = document.querySelectorAll('.highlight-on-click');
+    highlightOnClick.forEach(function(input) {
+        input.addEventListener('click', function() {
+            // Remove highlight from all inputs
+            highlightOnClick.forEach(function(input) {
+                input.style.backgroundColor = '';
+            });
+            // Highlight the clicked input
+            this.style.backgroundColor = 'yellow';
+        });
+    });
+
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+        return true;
+    }
+
+    function updateAmount() {
+        // Custom logic for updating amount
+    }
+
+    function updateAmount1() {
+        // Custom logic for updating amount
+    }
+
+    function updateAmount2() {
+        // Custom logic for updating amount
+    }
+
+    function chckSolutions(amount, category) {
+        // Custom logic for checking solutions
+    }
+</script>  
 
   <footer class="ftco-footer ftco-section img">
     <div class="overlay"></div>
