@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donation Page</title>
+    <style>
+        /* Add your CSS styles here */
+        .donation-container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .donation-container input {
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="donation-container">
+        <h2>Donate Now</h2>
+        <form id="donationForm">
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <input type="number" id="amount" placeholder="Enter amount" required />
+            <button type="button" onclick="submitDonation()">Donate</button>
+        </form>
+        <p id="statusMessage"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
