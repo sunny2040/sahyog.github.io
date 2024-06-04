@@ -26,6 +26,33 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+    /* Styles for the card */
+    .card {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 600px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 9999;
+    }
+
+    /* Styles for close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
   </head>
   <body>
     
@@ -156,11 +183,43 @@
                 <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Policies</h2>
                 <ul class="list-unstyled">
-                  <li><a href="https://www.termsfeed.com/live/terms-and-conditions-url/" title="Terms and Conditions">Terms and Conditions</a></li>
+                  <li><a href="#" title="Terms and Conditions" id="terms-link">Terms and Conditions</a></li>
                   <li><a href="https://www.termsfeed.com/live/92e75dae-a10c-4e93-9571-33dca968f71f/" title="Privacy Policy">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>
+            <!-- Terms and Conditions section -->
+            <div class="card" id="terms-card">
+              <div class="close-btn" onclick="closeCard()">X</div>
+              <!-- Terms and Conditions content -->
+              <div class="card-body">
+                <h2>Terms and Conditions</h2>
+                <p>
+                  <strong>1. Terms</strong><br>
+                  By accessing this Website, accessible from https://techvisionpro.in/, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trademark law.<br><br>
+                  
+                  <!-- Add more terms and conditions content here -->
+                </p>
+              </div>
+            </div>
+
+    <script>
+      // Get references to the link and the card
+      const termsLink = document.getElementById('terms-link');
+      const termsCard = document.getElementById('terms-card');
+
+      // Function to show the card when the link is clicked
+      termsLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        termsCard.style.display = 'block'; // Show the card
+      });
+
+      // Function to close the card
+      function closeCard() {
+    var termsCard = document.getElementById('terms-card');
+    termsCard.style.display = 'none'; // Hide the card
+  }
+    </script>
                 <div class="col-md">
                   <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Follow Us</h2>
