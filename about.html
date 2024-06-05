@@ -26,41 +26,6 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-      /* Styles for the card */
-      .card {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        max-width: 600px;
-		    max-height: 40%; /* Adjust the maximum height as needed */
-		    overflow-y: auto; /* Add scrollbar when content overflows vertically */
-        background: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: none;
-        z-index: 9999;
-      }
-    
-      /* Styles for text inside the card */
-      .card p {
-        color: #333; /* Text color */
-        font-size: 16px; /* Font size */
-        margin: 0; /* Remove default margin */
-      }
-    
-      /* Styles for close button */
-      .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-      }
-    </style>
   </head>
   <body>
     
@@ -246,66 +211,13 @@
                 <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Policies</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#" title="Terms and Conditions" id="terms-link">Terms and Conditions</a></li>
+                  <li><a href="terms-condition.html" title="Terms and Conditions" id="terms-link">Terms and Conditions</a></li>
                   <li><a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a></li>
                   <li><a href="refund-policy.html" title="Refund Policy">Refund Policy</a></li>
                 </ul>
               </div>
             </div>
-            <!-- Terms and Conditions section -->
-            <div class="card" id="terms-card">
-              <div class="close-btn" onclick="closeCard()">X</div>
-              <!-- Terms and Conditions content -->
-              <div class="card-body">
-                <h2>Terms and Conditions</h2>
-                <p>
-                  <strong>1. Terms</strong><br>
-                  By accessing this Website, accessible from https://techvisionpro.in/, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trademark law.<br><br>
-                  <strong>2. Use License</strong><br>
-                  Permission is granted to temporarily download one copy of the materials on TECHVISION's Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
-
-                      modify or copy the materials;
-                      use the materials for any commercial purpose or for any public display;
-                      attempt to reverse engineer any software contained on TECHVISION's Website;
-                      remove any copyright or other proprietary notations from the materials; or
-                      transferring the materials to another person or "mirror" the materials on any other server.
-                      This will let TECHVISION to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format. These Terms of Service has been created with the help of the Terms Of Service Generator.<br><br>
-                  <strong>3. Disclaimer</strong><br>
-                  All the materials on TECHVISION's Website are provided "as is". TECHVISION makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, TECHVISION does not make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website.<br><br>
-                  <strong>4. Limitations</strong><br>
-                  TECHVISION or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on TECHVISION's Website, even if TECHVISION or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.<br><br>
-                  <strong>5. Revisions and Errata</strong><br>
-                  The materials appearing on TECHVISION's Website may include technical, typographical, or photographic errors. TECHVISION will not promise that any of the materials in this Website are accurate, complete, or current. TECHVISION may change the materials contained on its Website at any time without notice. TECHVISION does not make any commitment to update the materials.<br><br>
-                  <strong>6. Links</strong><br>
-                  TECHVISION has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by TECHVISION of the site. The use of any linked website is at the user's own risk.<br><br>
-                  <strong>7. Site Terms of Use Modifications</strong><br>
-                  TECHVISION may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.<br><br>
-                  <strong>8. Your Privacy</strong><br>
-                  Please read our Privacy Policy.<br><br>
-                  <strong>9. Governing Law</strong><br>
-                  Any claim related to TECHVISION's Website shall be governed by the laws of vi without regards to its conflict of law provisions.<br><br>
-                  
-                </p>
-              </div>
-            </div>
-
-    <script>
-      // Get references to the link and the card
-      const termsLink = document.getElementById('terms-link');
-      const termsCard = document.getElementById('terms-card');
-
-      // Function to show the card when the link is clicked
-      termsLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        termsCard.style.display = 'block'; // Show the card
-      });
-
-      // Function to close the card
-      function closeCard() {
-    var termsCard = document.getElementById('terms-card');
-    termsCard.style.display = 'none'; // Hide the card
-  }
-    </script>                <div class="col-md">
+            <div class="col-md">
                   <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Follow Us</h2>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
