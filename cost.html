@@ -3,61 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechVision Services Pricing</title>
+    <title>TechVision</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h4 {
-            color: #007BFF;
-            text-align: center;
-            margin-top: 0;
-        }
-        p {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .read-more-btn {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-top: 20px;
-            text-align: center;
-            color: white;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .read-more-btn:hover {
-            background-color: #0056b3;
-        }
+        /* Card Details Page Specific Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/software1.jpg') no-repeat center center fixed; /* Replace with your background image URL */
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white; /* Ensure text color is visible on the background */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken background image with an overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Show 3 cards per row */
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+}
+.card {
+    background: linear-gradient(135deg, #f09, #3023ae);
+    border-radius: 15px;
+    padding: 15px; /* Adjust padding */
+    width: 100%; /* Set to 100% for responsive resizing */
+    max-width: 300px; /* Maximum width for smaller cards */
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-size: 14px; /* Adjust font size for smaller cards */
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 100px; /* Adjust the height */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card h2 {
+    margin: 10px 0; /* Adjust margin */
+    font-size: 20px; /* Adjust font size */
+}
+
+.card p {
+    margin: 0;
+    font-size: 12px; /* Adjust font size */
+    color: #eee;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    animation: slideIn 0.3s;
+    color: #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative; /* Make the container relative to position child elements */
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute; /* Position the close button absolutely */
+    top: 10px; /* 10 pixels from the top */
+    right: 20px; /* 20 pixels from the right */
+    transition: color 0.2s;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+}
+
     </style>
+
 </head>
 <body>
-    <div class="container">
-        <h4><strong>TechVision Services Pricing</strong></h4>
-        <p>Banking Nidhi Software: ₹15K to ₹165K</p>
-        <p>Micro Finance Software: ₹20K to ₹80K</p>
-        <p>Co-operative Society Software: ₹25K to ₹150K</p>
-        <p>MLM Software: ₹15K</p>
-        <p>Hospital Management Software: ₹25K</p>
-        <p>B2B Software: ₹20K to ₹60K</p>
-        <p>Software API: Cost will depend on the requirements</p>
-        <a href="index.html" class="read-more-btn">Read More</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/TechVision_logo.png" alt="TechVision Logo" style="height: 50px; width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="donation.html" class="nav-link">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Top Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Banking Nidhi Software</a>
+                            <a class="dropdown-item" href="#">Micro Finance Software</a>
+                            <a class="dropdown-item" href="#">Co-operative Society Software</a>
+                            <a class="dropdown-item" href="#">MLM Software</a>
+                            <a class="dropdown-item" href="#">Hospital Management Software</a>
+                            <a class="dropdown-item" href="#">B2B Software & API</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="cost.html" class="nav-link">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay"></div>
+    <div class="container" style="margin-top: 80px;"> <!-- Adjust for navbar height -->
+        <div class="card" data-title="Nidhi Software" data-description="Member Management(Create-Edit), Share Management(Add/Withdraw Share - Share Certificate), Deposit Accounts(FD/RD/PIGMY/MIS), Account Opening(Saving Account), Virtual Account(IFSC Facility), IMPS & NEFT Facility(Send Money to Any Bank) , All These Banking Software Services : UPTO ₹15K to ₹165K">
+            <img src="images/programming.jpg" alt="Nidhi Software">
+            <h2>Nidhi Software</h2>
+            <p>Click for More Details</p>
+        </div>
+        <div class="card" data-title="Finance" data-description="Customer Management, Loan Management, Loan Report System, Manage Document, Credit Score(CRIF High Mark), E-NACH (NPCI) , All These Finance Software Services : UPTO ₹20K to ₹80K">
+            <img src="images/b1.webp" alt="Finance">
+            <h2>Finance</h2>
+            <p>Click for More Details</p>
+        </div>
+        <div class="card" data-title="MLM Software" data-description="MLM Software: UPTO ₹15K">
+            <img src="images/6.jpg" alt="MLM Software">
+            <h2>MLM Software</h2>
+            <p>Click for More Details</p>
+        </div>
+        <div class="card" data-title="Micro Finance Software" data-description="Micro Finance Software: UPTO ₹20K to ₹80K">
+            <img src="images/b2.jpg" alt="Micro Finance Software">
+            <h2>Micro Finance Software</h2>
+            <p>Click for More Details</p>
+        </div>
+        <div class="card" data-title="Hospital Management Software" data-description="Hospital Management Software: UPTO ₹25K">
+            <img src="images/b3.jpg" alt="Hospital Management Software">
+            <h2>Hospital Management Software</h2>
+            <p>Click for More Details</p>
+        </div>
+        <div class="card" data-title="B2B Software & API" data-description="B2B Software: UPTO ₹20K to ₹60K , Software API: Cost will depend on the requirements">
+            <img src="images/b4.png" alt="B2B Software & API">
+            <h2>B2B Software - API</h2>
+            <p>Click for More Details</p>
+        </div>
     </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <ul id="modal-description"></ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            const closeBtn = document.querySelector('.close');
+
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const title = card.getAttribute('data-title');
+                    const description = card.getAttribute('data-description');
+                    modalTitle.textContent = title;
+
+                    // Clear previous description
+                    modalDescription.innerHTML = '';
+
+                    // Split description by comma and add as list items
+                    const descriptionItems = description.split(',');
+                    descriptionItems.forEach(item => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = item.trim();
+                        modalDescription.appendChild(listItem);
+                    });
+
+                    modal.style.display = 'block';
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
