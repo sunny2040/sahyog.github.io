@@ -18,7 +18,7 @@ const Pay = () => {
   const makePayment = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://sunny2040.github.io/sahyog.github.io/api/initiatePayment", data);
+      const response = await axios.post("http://localhost:5000/api/initiatePayment", data);
       if (response.data.success) {
         window.location.href = response.data.paymentUrl;
       } else {
