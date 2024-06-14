@@ -38,9 +38,9 @@ app.post('/initiatePayment', async (req, res) => {
       merchantTransactionId: transactionId,
       merchantUserId: phone,
       amount: amount * 100, // Amount in paise
-      redirectUrl: `https://sunny2040.github.io/sahyog.github.io:3000/success`,
+      redirectUrl: `https://sunny2040.github.io/sahyog.github.io/success`, // Remove port number
       redirectMode: "REDIRECT",
-      callbackUrl: `https://sunny2040.github.io/sahyog.github.io:5000/api/status/${transactionId}`,
+      callbackUrl: `https://sunny2040.github.io/sahyog.github.io/api/status/${transactionId}`, // Remove port number
       mobileNumber: phone,
       paymentInstrument: {
         type: "PAY_PAGE",
