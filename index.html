@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/indx.css">
 
     <style>
       .ftco-counter .counter-wrap {
@@ -212,6 +213,52 @@
     margin-bottom: 0;
   }
 </style>
+
+<style>
+  .card-custom {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.card-custom .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-custom .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-custom .card-text {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.card-custom .btn {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .card-custom .card-body {
+        padding: 1.5rem;
+    }
+}
+
+</style>
     
   </head>
   <body>
@@ -219,7 +266,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="images/TechVision_logo.png" alt="TechVision Logo" style="height: 200px; width: 200px;">
+          <img src="images/runjhunlogo.jpeg" alt="Sahyog Logo" style="height: 100px; width: 100px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
@@ -229,21 +276,22 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="donation.html" class="nav-link">Donation</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Top Services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="">Banking Nidhi Software</a>
-                <a class="dropdown-item" href="">Micro Finance Software</a>
-                <a class="dropdown-item" href="">Co-operative Society Software</a>
-                <a class="dropdown-item" href="">MLM Software</a>
-                <a class="dropdown-item" href="">Hospital Management Software</a>
-                <a class="dropdown-item" href="">B2B Software & API</a>
+                <a class="dropdown-item" href="">Child Sexual Abuse</a>
+                <a class="dropdown-item" href="">Child Labour</a>
+                <a class="dropdown-item" href="">Ols Age Support</a>
+                <a class="dropdown-item" href="">Armed Force Welfare</a>
+                <a class="dropdown-item" href="">Covid Support</a>
+                <a class="dropdown-item" href="">Rape Survivor</a>
               </div>
             </li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="cost.html" class="nav-link">Pricing</a></li>
+            <!-- <li class="nav-item"><a href="cost.html" class="nav-link">Pricing</a></li> -->
           </ul>
           
         </div>
@@ -253,15 +301,13 @@
     <div id="popup" class="popup">
     <div class="popup-content" style="position: relative;">
         <span class="close-btn" onclick="closePopup()" style="position: absolute; top: 5px; right: 5px; font-size: 20px;">x</span>
-        <img src="images/Banking.jpg" alt="Pop-up Image" style="width:40%; height:auto; margin-right: 20px; float: left;">
+        <img src="images/Pope-Up.png" alt="Pop-up Image" style="width:40%; height:auto; margin-right: 20px; float: left;">
         <div style="display: flex; flex-direction: column;">
-          <h4><strong>Services TechVision Provide</strong></h4>
-          <p>Banking Nidhi Software</p>
-          <p>Micro Finance, MLM Software & B2B Software - API</p>
-          <p>Co-operative Society & Hospital Management Software</p>
-          <p><strong>For Pricing you can click Read More</strong></p>
+          <h4><strong>URGENT ATTENTION!</strong></h4>
+          <p>Help Us Save Lives! Your Donation Can Make a Difference for Patients in Emergent Need. With 100 Cases Already in Treatment, Every Contribution Counts!</p>
+          <p><strong>Click for Read More</strong></p>
           <div style="margin: 0 auto;">
-              <button onclick="redirectToPage('cost.html')" class="read-more-btn" id="readMoreBtn"> Read More </button>
+              <button onclick="redirectToPage('donation.html')" class="read-more-btn" id="readMoreBtn"> Read More </button>
           </div>
         </div>      
         </div>
@@ -301,7 +347,7 @@ function redirectToPage(pageURL) {
   </div>
   
   <script>
-      var images = ['images/pexels1.jpg', 'images/company.PNG', 'images/credit-card.jpg'];
+      var images = ['images/Banner-3.jpg', 'images/Banner-7.jpg', 'images/Banner-4.jpg'];
       var currentIndex = 0;
   
       // Preload all images in the background
@@ -319,40 +365,47 @@ function redirectToPage(pageURL) {
   </script>
   
 
-  <!--  <section class="ftco-counter ftco-intro" id="section-counter">
-    	<div class="container">
-    		<div class="row no-gutters">
-    			<div class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 color-1 align-items-stretch">
-              <div class="text">
-              	<span>Served Over</span>
-                <strong class="number" data-number="50000">0</strong>
-                <span>Children in worldwide countries</span>
-              </div>
+  <section class="ftco-counter ftco-intro" id="section-counter">
+    <div class="container">
+        <div class="row">
+            <!-- Served Over -->
+            <div class="col-md-4 d-flex justify-content-center mb-4 ftco-animate">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Served Over</h5>
+                        <div class="text">
+                          <span>Served Over</span>
+                          <strong class="number" data-number="50000">0</strong>
+                          <span>Children in worldwide countries</span>
+                      </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 color-2 align-items-stretch">
-              <div class="text">
-              	<h3 class="mb-4">Donate Money</h3>
-              	<p>Even the all-powerful Pointing has no control about the blind texts.</p>
-              	<p><a href="donation.html" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
-              </div>
+            <!-- Donate Money -->
+            <div class="col-md-4 d-flex justify-content-center mb-4 ftco-animate">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Donate Money</h5>
+                        <p class="card-text">Even the all-powerful Pointing has no control about the blind texts.</p>
+                        <a href="donation.html" class="btn btn-primary">Donate Now</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 color-3 align-items-stretch">
-              <div class="text">
-              	<h3 class="mb-4">Be a Volunteer</h3>
-              	<p>Even the all-powerful Pointing has no control about the blind texts.</p>
-              	<p><a href="contact.html" class="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
-              </div>
+            <!-- Be a Volunteer -->
+            <div class="col-md-4 d-flex justify-content-center mb-4 ftco-animate">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Be a Volunteer</h5>
+                        <p class="card-text">Even the all-powerful Pointing has no control about the blind texts.</p>
+                        <a href="contact.html" class="btn btn-primary">Be A Volunteer</a>
+                    </div>
+                </div>
             </div>
-          </div>
-    		</div>
-    	</div>
-    </section> -->
-    <div class="center">
+        </div>
+    </div>
+</section>
+
+    <!-- <div class="center">
       <h1 class="spec-text tracking-in-contract top-head">Bank on the Go Anytime, Anywhere</h1>
       <p class="tracking-in-contract top-para">
           TechVision banking software developers implement custom mobile banking solutions for financial institutions and customers. We make it possible for mobile banking software providers to customize features such as electronic bill payments, remote check deposit, P2P payments, fund transfers between accounts, text messaging and statement downloading and printing for your mobile banking app. Our mobile finance solutions put banking at your fingertips.
@@ -434,114 +487,115 @@ function redirectToPage(pageURL) {
           </div>
         </div>
       </div>
-    </section>
-
-   <!-- <section class="ftco-section bg-light">
-    	<div class="container-fluid">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-5 heading-section ftco-animate text-center">
-            <h2 class="mb-4">Ongoing Fundraising Campaigns</h2>
-            <p>Help Us Save Lives! Your Donation Can Make a Difference for Patients in Emergent Need. With 100 Cases Already in Treatment, Every Contribution Counts!</p>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-12 ftco-animate">
-    				<div class="carousel-cause owl-carousel">
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/img.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Education</a></h3>
-		    						<p>Sahyog care for you aims to be improving the education eminence in schools, to offer access to digital literacy and labs and to improve infrastructure in schools. The school therefore becomes the epicentre of information and awareness which will in turn improvise the standard of living in the community, also ensure child right to protection, health care, early childhood care and quality education, their participation in governance, safe and healthy living environment, and improved income of families for betterment of children’s future. Expence for one student for all these is Rs6000/- Per year</p>
-		    						<span class="donation-time mb-3 d-block">-880 days left</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">&#8377;300000/-</span>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/img\ \(1\).jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Sanitary Napkin</a></h3>
-		    						<p>The price of poor menstrual hygiene can be devastating, even deadly. Here at home, women who are homeless or incarcerated face risks of cervical cancer and infections when they can’t access or afford sanitary products. So here is a chance for you to make a difference. You can, through our medium, donate for pads to someone who needs it. Our Pack( 8 pcs) costs Rs16/- . We are targeting 50000 female across the community.</p>
-		    						<span class="donation-time mb-3 d-block">-880 days left</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">&#8377;800000/-</span>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/img\ \(2\).jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Old Age Home</a></h3>
-		    						<p>A roof over their heads is a critical need of the elder who are destitute, sick and abandoned by family and those uprooted by disasters. Sahyog care has established model recreational centre for the senior citizens and aged in places such as Delhi. Sahyog care supports 285 old age citizens of India. Sahyog Care aims to disabuse the popular mind-set that regards old age with a sense of pity for their helplessness. Replacing it with an attitude of confidence, fostering respect for them and encouraging fortitude in them. And bringing a little certainly, even fun into their lives. Support of Rs 7500/- is very helpful for one senior citizen to meet his requirement for fooding(Rs3500), lodging(Rs2000), and health(Rs1000) care on monthly basis.</p>
-		    						<span class="donation-time mb-3 d-block">-576 days left</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">&#8377;225000/-</span>
-		    					</div>
-		    				</div>
-	    				</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
     </section> -->
-
     <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-4">HEAR WHAT OUR CLIENTS HAVE TO SAY</h2>
+      <div class="container-fluid">
+          <div class="row justify-content-center mb-5 pb-3">
+              <div class="col-md-8 heading-section text-center ftco-animate">
+                  <h2 class="mb-4">Ongoing Fundraising Campaigns</h2>
+                  <p>Help Us Save Lives! Your Donation Can Make a Difference for Patients in Emergent Need. With 100 Cases Already in Treatment, Every Contribution Counts!</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 ftco-animate">
+                  <div class="carousel-cause owl-carousel">
+                      <!-- Education Campaign -->
+                      <div class="item">
+                          <div class="cause-entry">
+                              <a href="#" class="img d-flex align-items-center justify-content-center" style="background-image: url('images/img\ \(2\).jpg');"></a>
+                              <div class="text p-3 p-md-4">
+                                  <h3><a href="#">Education</a></h3>
+                                  <p>Sahyog care for you aims to improve the education quality in schools, provide access to digital literacy and labs, and enhance infrastructure. This ensures better living standards and a brighter future for children. Expense for one student per year is ₹6000.</p>
+                                  <span class="donation-time mb-3 d-block">-880 days left</span>
+                                  <div class="progress custom-progress-success">
+                                      <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span class="fund-raised d-block">&#8377;300,000</span>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Sanitary Napkin Campaign -->
+                      <div class="item">
+                          <div class="cause-entry">
+                              <a href="#" class="img d-flex align-items-center justify-content-center" style="background-image: url('images/img.jpg');"></a>
+                              <div class="text p-3 p-md-4">
+                                  <h3><a href="#">Sanitary Napkin</a></h3>
+                                  <p>Donating sanitary products can prevent devastating health consequences for women who can't access or afford them. Our pack (8 pcs) costs ₹16. We are targeting 50,000 females across the community.</p>
+                                  <span class="donation-time mb-3 d-block">-880 days left</span>
+                                  <div class="progress custom-progress-success">
+                                      <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span class="fund-raised d-block">&#8377;800,000</span>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Old Age Home Campaign -->
+                      <div class="item">
+                          <div class="cause-entry">
+                              <a href="#" class="img d-flex align-items-center justify-content-center" style="background-image: url('images/img\ \(1\).jpg');"></a>
+                              <div class="text p-3 p-md-4">
+                                  <h3><a href="#">Old Age Home</a></h3>
+                                  <p>Sahyog care supports 285 elderly citizens by providing a roof over their heads and a sense of security. Your support of ₹7500 per month can cover their food, lodging, and healthcare needs.</p>
+                                  <span class="donation-time mb-3 d-block">-576 days left</span>
+                                  <div class="progress custom-progress-success">
+                                      <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span class="fund-raised d-block">&#8377;225,000</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section ftco-animate text-center">
+          <h2 class="mb-4">OUR APPROACH</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="testimonial-card">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/person_1.jpg);"></div>
+              <div class="info ml-4">
+                <h5><strong>Assess</strong></h5>
+                <p>Assess Assessing and analyzing their current scenario, Sahyog reaches out to the community by using various tools, such as focus group discussions, meetings, campaigns, pilot studies etc.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
-            <div class="testimonial-card">
-              <div class="d-flex mb-4">
-                <div class="img" style="background-image: url(images/person_1.jpg);"></div>
-                <div class="info ml-4">
-                  <h5>Sunny Singh</h5>
-                  <p>We could not have done this without Chetu. We really appreciate the high standards and ethics the Chetu team members have shown throughout this project, which is a really good reflection on your company. It is difficult in today's world to find people who have a work ethic like this, so it has been a very refreshing change. The new “whiteboard” feature is super cool as are all the cool viewing features you added for the images and videos.</p>
-                  <span class="position">Creative Director, Entertainment Industry</span>
-                </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="testimonial-card">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/person_1.jpg);"></div>
+              <div class="info ml-4">
+                <h5><strong>Assist </strong></h5>
+                <p>Assist Assisting the community after assessment in the required field by building the capacity of the community through providing life skill trainings, or finding the prospective donors etc.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
-            <div class="testimonial-card">
-              <div class="d-flex mb-4">
-                <div class="img" style="background-image: url(images/person_1.jpg);"></div>
-                <div class="info ml-4">
-                  <h5>Hirendra</h5>
-                  <p>We are very pleased so far with the work by Pankaj and his team at Chetu. We are incredibly impressed with the level of organization, communication, speed, skill and understanding that Chetu has shown in regards to our requests and needs for a custom made CRM. We 100% know we made the right choice in trusting Chetu with this major undertaking.</p>
-                  <span class="position">Director of Operation, Hospitality Industry</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
-            <div class="testimonial-card">
-              <div class="d-flex mb-4">
-                <div class="img" style="background-image: url(images/person_1.jpg);"></div>
-                <div class="info ml-4">
-                  <h5>Shruti</h5>
-                  <p>Company partnered with Client to develop a prototype for a groundbreaking project that would unlock immersive virtual reality exploration for users.</p>
-                  <span class="position">Developer</span>
-                </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="testimonial-card">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/person_1.jpg);"></div>
+              <div class="info ml-4">
+                <h5><strong>Access </strong></h5>
+                <p>Access Access the resources, Sahyog takes the further step synergizing with the community, to the extent that the community is equipped enough on its own. These could be in any shape or form be it be either cash, or kind or engaging the community in viable livelihood options.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section class="ftco-section">
       <div class="container">
@@ -644,8 +698,8 @@ function redirectToPage(pageURL) {
 	    </div>
     </section>
 
-   <section class="ftco-section">
-   <!--    <div class="container">
+   <!-- <section class="ftco-section">
+      <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
             <h2 class="mb-4">TESTIMONIALS</h2>
@@ -698,16 +752,16 @@ function redirectToPage(pageURL) {
             </div>
           </div>
         </div>
-      </div> -->
-    </section> 
+      </div> 
+    </section> -->
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <img src="images/tech.png" alt="Logo" style="max-width: 40%; height: auto; margin-bottom: 20px;">
-              <p>Banking services are transforming through fintech innovations, offering seamless digital banking and personalized experiences. TechVision offers MLM Software, Hospital Software Solutions to enhance efficiency, security, and customer insights.</p>
+              <img src="images/runjhunlogo.jpeg" alt="Logo" style="max-width: 40%; height: auto; margin-bottom: 20px;">
+              <p>RUNJHUN MISHRA LUCK FUTURE INDIA NIDHI LIMITED Care for You is working to take stand against gender inequality through partnering directly or indirectly with government, schools, parents and village leaders to reverse these statistics and ensure access to quality education.</p>
                    
             </div>
           </div>
@@ -717,9 +771,9 @@ function redirectToPage(pageURL) {
                 <!-- Address Section -->
                 <h2 class="ftco-heading-2">ADDRESS</h2>
                 <ul class="list-unstyled">
-                      <li><span class="icon icon-map-marker"></span><span class="text">RUNJHUN MISHRA LUCK FUTURE INIDA NIDHI LIMITED, OPPOSITE SUDITI GLOBAL ACADEMY, NAGARIYA DEVI BY PASS ROAD, Manipuri, Uttar Pradesh, India 205119</span></li>
-                      <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +91-8218019690</span></a></li>
-                      <li><a href="#"><span class="icon icon-envelope"></span><span class="text">admin@visionpay.in</span></a></li>
+                      <li><span class="icon icon-map-marker"></span><span class="text">  RUNJHUN MISHRA LUCK FUTURE INDIA NIDHI LIMITED, Opposite Suditi Global Academy, Nagariya Devi By Pass Road, Mainpuri, Mainpuri, Uttar Pradesh, India, 205001  </span></li>
+                      <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +91-9927818223</span></a></li>
+                      <li><a href="#"><span class="icon icon-envelope"></span><span class="text">  aamankm743@gmail.com  </span></a></li>
                 </ul>
               </div>
               </div>
@@ -733,7 +787,7 @@ function redirectToPage(pageURL) {
                 </ul>
               </div>
             </div>
-                <div class="col-md">
+            <div class="col-md">
                   <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Follow Us</h2>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
@@ -745,10 +799,10 @@ function redirectToPage(pageURL) {
                 </div>
 
                  <!-- QR Code Section -->
-              <!-- <div class=" col-md d-flex flex-column align-items-center">
+              <div class=" col-md d-flex flex-column align-items-center">
                 <div class="img" style="background-image: url(images/SahyogQR.jpeg); width: 150px; height: 150px; background-size: cover;"></div>
                 <a href="#" class="btn btn-warning mt-3" style="pointer-events: none;">Scan & Donate</a>
-            </div> -->
+            </div>
         
             </div>
         </div>
@@ -758,7 +812,8 @@ function redirectToPage(pageURL) {
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;<script>document.write(new Date().getFullYear());</script> Designed and Developed by <i class="icon-heart" aria-hidden="true"></i> <a href="https://techvisionpro.in/" target="_blank">TechVision</a>              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> Designed and Developed by <i class="icon-heart" aria-hidden="true"></i> <a href="https://techvisionpro.in/" target="_blank">TechVision</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
       </div>

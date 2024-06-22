@@ -1,0 +1,68 @@
+.ftco-section {
+    padding: 4em 0;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading-section {
+    margin-bottom: 2em;
+}
+
+.carousel-cause .item {
+    margin: 0 15px;
+}
+
+.cause-entry {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.cause-entry .img {
+    display: block;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.cause-entry .text {
+    padding: 20px;
+}
+
+.cause-entry h3 {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.cause-entry p {
+    font-size: 16px;
+    margin-bottom: 1em;
+    color: #555;
+}
+
+.donation-time {
+    font-size: 14px;
+    color: #999;
+}
+
+.progress.custom-progress-success {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.progress-bar.bg-primary {
+    background-color: #007bff;
+}
+
+.fund-raised {
+    font-size: 18px;
+    color: #333;
+}
